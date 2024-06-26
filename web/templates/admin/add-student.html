@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    {% load static %}
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="{% static 'admin-dashboard.css' %}">
+</head>
+<body>
+    <div class="d-flex toggled" id="wrapper">
+       
+    <div class="bg-primary border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">  <img src="{% static 'images/logo.png' %}" alt=""></div>
+            <div class="list-group list-group-flush">
+                <a href="{% url 'adminn' %}" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                <a href="{% url 'add-students' %}" class="list-group-item list-group-item-action bg-light">Add Students</a>
+                <a href="{% url 'view-students' %}" class="list-group-item list-group-item-action bg-light">View Students</a>
+                <a href="{% url 'add-companies' %}" class="list-group-item list-group-item-action bg-light">Add Company</a>
+                <a href="{% url 'view-companies' %}" class="list-group-item list-group-item-action bg-light">View Companies</a>
+               <a href="{% url 'view-feedback' %}" class="list-group-item list-group-item-action bg-light">View Feedback</a>
+               <a href="{% url 'logout' %}" class="list-group-item list-group-item-action bg-light">Logout</a>
+           </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{data.name}}
+                            </a>
+                          
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <h1 class="mt-4">Add Students</h1>
+                <form method="post" enctype="multipart/form-data" action="{% url 'add-students' %}">
+                    {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-6 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="firstName">Name</label>
+                        <input type="text" name="name" class="form-control form-control-lg" />
+                      </div>
+    
+                    </div>
+                    <div class="col-lg-6 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="lastName">Email</label>
+                        <input type="email" name="email"  class="form-control form-control-lg" />
+                      </div>
+    
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="firstName">Contact</label>
+                        <input type="text" name="contact" class="form-control form-control-lg" />
+                      </div>
+    
+                    </div>
+                    
+                  </div>
+                
+                  <div class="row">
+                    
+                    <div class="col-lg-6 mb-1">
+    
+                      <h6 class="mb-2 pb-1">Gender: </h6>
+    
+                      <div class="form-check form-check-inline">
+                        
+                        Male<input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                          value="male" />
+                         Female <input class="form-check-input"  type="radio" name="gender" id="femaleGender"
+                          value="Female" />
+                       
+                      </div>
+    
+                    
+    
+                    </div>
+                    
+                 </div>
+                 <div class="row">
+                    <div class="col-lg-12 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="firstName">DOB</label>
+                        <input type="date" name="dob" class="form-control form-control-lg" />
+                      </div>
+    
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="firstName">Qualification</label>
+                        <input type="text" name="qualification" class="form-control form-control-lg" />
+                      </div>
+    
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="firstName">City</label>
+                        <input type="text" name="city" class="form-control form-control-lg" />
+                      </div>
+    
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="firstName">Address</label>
+                        <textarea class="form-control form-control-lg" name="address"></textarea>
+                      </div>
+    
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mb-1">
+    
+                      <div data-mdb-input-init class="form-outline">
+                        <label class="form-label" for="firstName">Resume</label>
+                        <input type="file" name="resume" class="form-control form-control-lg" />
+                      </div>
+    
+                    </div>
+                    
+                  </div>
+                     <div class="mt-2">
+                    <input name="submit" class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                    <p>{{msg}}</p>
+                  </div>
+    
+                </form>
+              </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/fav.png' %}">
+    <!-- bootstrap v4 css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+    <!-- Offcanvas CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/off-canvas.css' %}">
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/flaticon.css' %}">
+    <!-- flaticon2 css  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/fonts2/flaticon.css' %}">
+    <!-- rsmenu CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/rsmenu-main.css' %}">
+    <!-- rsmenu transitions CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/rsmenu-transitions.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+    <div class="book_preload">
+        <div class="book">
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+            <div class="book__page"></div>
+        </div>
+    </div>
+    <!--Preloader area end here-->
+    
+    <!--Full width header Start-->
+    <div class="full-width-header">
+
+        <!-- Toolbar Start -->
+        <div class="rs-toolbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="rs-toolbar-left">
+                            <div class="welcome-message">
+                                <i class="fa fa-bank"></i><span>Welcome to PCMS</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="rs-toolbar-right">
+                            <div class="toolbar-share-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://x.com/Rajeev_5111"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/rajeev-prajapati5111/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <a href="{% url 'apply' %}" class="apply-btn">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Toolbar End -->
+        
+        <!--Header Start-->
+        <header id="rs-header" class="rs-header">
+            
+            <!-- Header Top Start -->
+            <div class="rs-header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="header-contact">
+                                <div id="info-details" class="widget-text">
+                                    <i class="glyph-icon flaticon-email"></i>
+                                    <div class="info-text">
+                                        <a href="prajapatirajeev258@gmail.com">
+                                            <span>Mail Us</span>
+                                            prajapatirajeev258@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="logo-area text-center" >
+                                <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="header-contact pull-right">
+                                <div id="phone-details" class="widget-text">
+                                    <i class="glyph-icon flaticon-phone-call"></i>
+                                    <div class="info-text">
+                                        <a href="tel:+91-7785059004">
+                                            <span>Call Us</span>
+                                            7785059004
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>				
+                </div>
+            </div>
+            <!-- Header Top End -->
+
+            <!-- Menu Start -->
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="main-menu">
+                        <div class="row relative">
+                            <div class="col-sm-12 ">
+                                
+                                <a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
+                                <nav class="rs-menu ">
+                                    <ul class="nav-menu ">
+                                        <!-- Home -->
+                                        <li class="current-menu-item current_page_item menu-item-has-children"> <a href="index.html" class="home">Home</a></li>
+                                        <!-- End Home --> 
+                                        <!--About Menu Start-->
+                                        
+                                        <li class="menu-item-has-children">
+                                            <a href="#rs-about-2">About Us</a>
+                                        </li>
+                                        <!--About Menu End--> 
+                                        
+                                        <!--Events Menu Start-->
+                                        <li class="menu-item-has-children">
+                                            <a href="#rs-events">Events</a>
+                                        </li>
+                                        <!--Events Menu End-->
+                                        <!--Contact Menu Start-->
+                                        <li> <a href="{% url 'contact' %}">Contact</a></li>
+                                        <!--Contact Menu End-->
+                                        <li> <a href="{% url 'signin' %}">Login</a></li>
+                                    </ul>
+                                </nav>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Menu End -->
+        </header>
+        <!--Header End-->
+
+    </div>
+    <!--Full width header End-->
+    
+    <!-- Slider Area Start -->
+    <div id="rs-slider" class="slider-overlay-2">     
+        <div id="home-slider" class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="0" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="false" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="1" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false">
+            <!-- Item 1 -->
+            <div class="item active">
+                <img src="{% static 'images/slider/home1/slide1.jpg' %}" alt="Slide1" />
+                <div class="slide-content">
+                    <div class="display-table">
+                        <div class="display-table-cell">
+                            <div class="container text-center">
+                                <h1 class="slider-title" data-animation-in="fadeInLeft" data-animation-out="animate-out">WELCOME TO PLACEMENT CELL MANAGEMENT SYSTEM</h1>
+                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">A Placement Cell Management System is an essential tool for educational institutions aiming to streamline their placement processes and improve outcomes for students.</p>  
+                                <a href="#" class="sl-get-started-btn" data-animation-in="lightSpeedIn" data-animation-out="animate-out">GET STARTED NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>
+    <!-- Slider Area End -->
+    
+    <!-- Services Start -->
+    <!-- <div class="rs-services rs-services-style1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="services-item rs-animation-hover">
+                        <div class="services-icon">
+                            <i class="fa fa-american-sign-language-interpreting rs-animation-scale-up"></i>                    	        
+                        </div>
+                        <div class="services-desc">
+                            <h4 class="services-title">Trending Courses</h4>
+                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="services-item rs-animation-hover">
+                        <div class="services-icon">                    	        
+                            <i class="fa fa-book rs-animation-scale-up"></i>
+                        </div>
+                        <div class="services-desc">
+                            <h4 class="services-title">Books & Liberary</h4>
+                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="services-item rs-animation-hover">
+                        <div class="services-icon">
+                            <i class="fa fa-user rs-animation-scale-up"></i>
+                        </div>
+                        <div class="services-desc">
+                            <h4 class="services-title">Certified Teachers</h4>
+                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="services-item rs-animation-hover">
+                        <div class="services-icon">
+                            <i class="fa fa-graduation-cap rs-animation-scale-up"></i>
+                        </div>
+                        <div class="services-desc">
+                            <h4 class="services-title">Certification</h4>
+                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Services End -->
+
+<!-- About Us Start -->
+<div id="rs-about-2" class="rs-about-2 sec-spacer">
+<div class="container">
+    <div class="row rs-vertical-bottom">
+        <div class="col-lg-7 col-md-12">
+            <div class="sec-title mb-30">
+                <h2>ABOUT US</h2>
+            </div>
+            <p class="mobile-mb-50">
+                A Placement Cell Management System (PCMS) is a comprehensive platform designed to streamline and manage the placement process for educational institutions. These systems help in coordinating between students, the placement cell (the department responsible for handling placements), and potential employers.
+            </p>
+        </div>
+        <div class="col-lg-5 col-md-12">
+            <div class="about-img rs-image-effect-shine">
+                <img src="{% static 'images/about/about2.jpg' %}" alt="img02">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- About Us End -->
+  
+
+<hr>
+    <!-- Events Start -->
+    
+    <div id="rs-events" class="rs-events sec-spacer">
+        <div class="container">
+            <div class="sec-title mb-50 text-center">
+                <h2>UPCOMING DRIVE</h2>      
+                <p>Organizing an upcoming placement drive involves meticulous planning and coordination to ensure a smooth and successful event.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img src="images/events/1.jpg" alt="" />
+                                <a class="image-link" href="#" title="kgi drive">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="events-details sec-color">
+                                <div class="event-date">
+                                    <i class="fa fa-calendar"></i>
+                                    <span>28 June 2024</span>
+                                </div>
+                                <h4 class="event-title"><a href="#">FOR - KIOT</a></h4>
+                                <div class="event-meta">
+                                    <div class="event-time">
+                                        <i class="fa fa-clock-o"></i>
+                                        <span>12.30PM-05.30PM</span>
+                                    </div>
+                                    <div class="event-location">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>GorakhPur, Main Campus</span>
+                                    </div>
+                                </div>
+                                <div class="event-btn">
+                                    <a href="drive/kiotform.html">Join Drive <i class="fa fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img src="images/events/2.jpg" alt="" />
+                                <a class="image-link" href="events-details.html" title="kgi drive">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="events-details sec-color">
+                                <div class="event-date">
+                                    <i class="fa fa-calendar"></i>
+                                    <span>28 June 2024</span>
+                                </div>
+                                <h4 class="event-title"><a href="#">FOR - KIPS</a></h4>
+                                <div class="event-meta">
+                                    <div class="event-time">
+                                        <i class="fa fa-clock-o"></i>
+                                        <span>10.30AM-03.30PM</span>
+                                    </div>
+                                    <div class="event-location">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>Venue, Main Campus</span>
+                                    </div>
+                                </div>
+                                <div class="event-btn">
+                                    <a href="drive/kipsform.html">Join Drive <i class="fa fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-img">
+                                <img src="images/events/3.jpg" alt="" />
+                                <a class="image-link" href="events-details.html" title="University Tour 2018">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="events-details sec-color">
+                                <div class="event-date">
+                                    <i class="fa fa-calendar"></i>
+                                    <span>28 June 2024</span>
+                                </div>
+                                <h4 class="event-title"><a href="#">FOR- KINSR</a></h4>
+                                <div class="event-meta">
+                                    <div class="event-time">
+                                        <i class="fa fa-clock-o"></i>
+                                        <span>10.30AM-03.30PM</span>
+                                    </div>
+                                    <div class="event-location">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>Venue, Main Campus</span>
+                                    </div>
+                                </div>
+                                <div class="event-btn">
+                                    <a href="drive/kinsrform.html">Join Drive <i class="fa fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Events End -->
+    
+    <!-- Footer Start -->
+    <footer id="rs-footer" class="bg3 rs-footer">
+        <div class="container">
+            <!-- Footer Address -->
+            <div>
+                <div class="row footer-contact-desc">
+                    <div class="col-md-4">
+                        <div class="contact-inner">
+                            <i class="fa fa-map-marker"></i>
+                            <h4 class="contact-title">Address</h4>
+                            <p class="contact-desc">
+                                Kanpur, UP
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-inner">
+                            <i class="fa fa-phone"></i>
+                            <h4 class="contact-title">Phone Number</h4>
+                            <p class="contact-desc">
+                                7785059004
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-inner">
+                            <i class="fa fa-map-marker"></i>
+                            <h4 class="contact-title">Email Address</h4>
+                            <p class="contact-desc">
+                                prajapatirajeev258@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>					
+            </div>
+        </div>
+        
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="about-widget">
+                            <img src="{% static 'images/logo.png' %}" alt="Footer Logo">
+                            <p>A Placement Cell, often found in educational institutions like universities and colleges, is a dedicated department responsible for facilitating the placement process for students.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="footer-title">OUR SITEMAP</h5>
+                        <ul class="sitemap-widget">
+                            <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                            <li ><a href="about.html"><i class="fa fa-angle-right" aria-hidden="true"></i>About</a></li>
+                            <li><a href="events.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Events</a></li>
+                            <li><a href="{% url 'contact' %}"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-share">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/rajeev._.5111/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://x.com/Rajeev_5111"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rajeev-prajapati5111/"><i class="fa fa-linkedin"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-vimeo"></i></a></li>     -->
+                    </ul>
+                </div>                                
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    <p>© 2024 <a href="#">Rajeev</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- start scrollUp  -->
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+    <!-- jquery latest version -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- owl.carousel js -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- slick.min js -->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!-- isotope.pkgd.min js -->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!-- imagesloaded.pkgd.min js -->
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <!-- wow js -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- counter top js -->
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <!-- magnific popup -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- rsmenu js -->
+    <script src="{% static 'js/rsmenu-main.js' %}"></script>
+    <!-- plugins js -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+     <!-- main js -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
